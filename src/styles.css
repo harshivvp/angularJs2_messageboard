@@ -1,2 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+div.heading-font
+{
+    font-family: "Roboto";
+    font-style: normal,
+}
+
+div.body-font
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: oblique;
+}
+
+.btn-font
+{
+    font-family: 'Roboto', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration-color: aquamarine; 
+    text-shadow: 2cm,rgb(0, 255, 55);
+}

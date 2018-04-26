@@ -1,19 +1,27 @@
 import { Component } from "@angular/core";
 import { NgForOf } from "@angular/common";
 
+
 @Component({
     selector: "messages",
     template: `
-    <h1>This is the message component!</h1>
-    <div *ngFor='let message of messages'>
-        {{ message.owner }} says :- {{ message.text }}
+    <div class="container container-fluid">
+        <div class='jumbotron heading-font'>
+            <h1 class='text-center'>messagebox</h1>
+        </div>    
+        <div class='list-group-item body-font' *ngFor='let message of messages'>
+            <b>>>>  {{ message.owner }}</b> : {{ message.text }}
+        </div>
+        <br>
+        <div class='btn-font'>
+            <button type='button' class='btn btn-primary'>Click here!</button>
+        </div>    
     </div>
-    <button>Basic</button>
-    `
+        `
 })
 
 export class MessagesComponent {    
-    messages = [{text:"Hello Kiddo!", owner:"Kunal"},{text:"Nah. Bye!", owner:"Nilesh"}];
+    messages = [{text:"Hello kid!", owner:"Kunal"},{text:"lol!", owner:"Nilesh"}];
 
 }
  
